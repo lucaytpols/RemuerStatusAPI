@@ -10,14 +10,12 @@ try:
     url1 = requests.get("site")
 
     if url1.status_code == 200:
-        json_api_response_1 = "OK, running without issues!"
+        url1 = "OK, running without issues!"
     else:
         url1 = "Error: site is having a issue right now, please check later."
 
 except:
-    json_api_response_1 = "Offline, please check again later!"
-    json_api_response_2 = "Offline, please check again later!"
-    json_api_response_3 = "Offline, please check again later!"
+    url1 = "Offline, please check again later!"
 
 while True:
 
